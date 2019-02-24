@@ -1,0 +1,10 @@
+\chapter{Method}
+
+\begin{align}
+\alpha &= softmax(f^t) \label{eq:alpha} \\
+\hat{v}^t &= \sum_{s=1}^k  \alpha_s^t V_s \label{eq:vhat} 
+\end{align}
+
+\subsection{CTX\_latemb Model}\label{sec: sub_latectx}
+This is the first variation of the baseline 
+where $\odot$ stands for element-wise multiplication,  $\bar{V}$ is from Eq. \ref{eq:spt_feats}, $\hat{v}$ from Eq. 

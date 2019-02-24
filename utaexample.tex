@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%  UTA Ph.D. Dissertation Document Generation Using Tex/Latex   %%%%%%%%%%%%%%%%%%%
+%%%%  UTA Master thesis Document Generation Using Tex/Latex   %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Tex/Latex is one of the widely used software to generate many technical and other
 %     documents including thesis/dissertations at many universities including UTA.
@@ -40,7 +40,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%  UTA Ph.D. Dissertation Document Generation Using Tex/Latex   %%%%%%%%%%%%%%%%%%%
+%%%%  UTA Master's Thesis Document Generation Using Tex/Latex   %%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,6 +49,11 @@
 
 \documentclass[12pt]{report}
       \usepackage{utathesis}
+	  \usepackage{uri}      
+      \usepackage{caption}
+      \usepackage{subcaption}
+      \captionsetup{compatibility=false}
+      \usepackage{adjustbox}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%   load any packages which are needed   %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -60,17 +65,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       \usepackage{graphicx}
       \usepackage{amsmath}
+%      \usepackage{times}
+	  \usepackage{epsfig}
+	  \usepackage{amssymb}
+		
+	  \usepackage{booktabs}
+	  \usepackage{afterpage}
+	  \usepackage{multirow}
+	  \usepackage{dblfloatfix}
     \begin{document}
     \input{psfig.sty}
 %     SAMPLE FRONT MATTER:
-       \graduationmonth{December}
-       \graduationyear{2003}
-       \defensedate{November 15, 2003}
-       \author{JAY VICTOR SMITH}
-       \committee{Vasant K. Prabhu}{Jonathan Bredow}{Jung-Chih~Chiao}{Sajal~K.~Das}{Harold
-       Sobol}
-       \title{COMPARATIVE ANALYSIS OF PARTIALLY COHERENT AND  DIFFERENTIALLY COHERENT PSK
-        SYSTEMS WITH \\ FADING AND COCHANNEL INTEREFERENCE}
+       \graduationmonth{May}
+       \graduationyear{2019}
+       \defensedate{Feb 25, 2019}
+       \author{ANKIT KHARE}
+       \committee{Dr. }{Dr.}{Dr. }{}{}
+       \title{ULTRA}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,9 +110,7 @@
 
 	\vspace*{1.0in}
 	\begin{center}
-		To my mother Sari and my uncle Luis Alfredo (my father figure)
-
-		who set the example and who made me who I am.
+		To my selfless friends <> who helped me stay on track and assisted me in many ways towards the completion of my thesis. And to my parents who gave me financial stability so that I never had to worry about anything but my thesis.
 	\end{center}
 
 \newpage
@@ -134,15 +143,20 @@
 %     \input macros.tex      % file containing author's macro definitions
 \input chap1.tex      % file containing Chapter 2 contents
 \input chap2.tex      % file containing Chapter 2 contents
+\input chap3.tex
+\input chap4.tex
+\input chap5.tex
+\input chap6.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%                  Appendices                  %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix
+%\appendix
 %      \chapter{FIRST APPENDIX NAME}
-\chapter{JENSEN'S INEQUALITY FOR CONVEX FUNCTIONS}
-\input appA.tex       % file with Appendix A contents
-\chapter{UPPER BOUNDS ON MOMENTS}
-\input appB.tex       % file with Appendix B contents
+%\chapter{Deep learning}
+%\input appA.tex       % file with Appendix A contents
+%\chapter{Image Captioning}
+%\input appB.tex       % file with Appendix B contents
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%                 Bibliography                 %%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
