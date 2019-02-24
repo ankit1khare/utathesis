@@ -1,9 +1,12 @@
-utathesis
+The University of Texas at Arlington Thesis Template in LATEX 
 =========
 
-Template for UT Arlington theses.
-
+Note that it is not an official template. I've modified the official PhD. dissertation template in accordance to the formatting guidelines provided by the department of Computer Science and engineering of The University of Texas at Arlington. 
 =========
+
+Refer to the pdf for a general idea of how the final file might look like.
+--------
+
 
 Below are some common formatting problems with solutions.
 
